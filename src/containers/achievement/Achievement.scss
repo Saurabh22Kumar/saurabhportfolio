@@ -1,0 +1,254 @@
+// @import "../../_globalColor";
+
+// .achievement-heading {
+//   font-size: 56px;
+//   font-weight: 400;
+//   line-height: normal;
+//   margin: 0px;
+// }
+// .achievement-subtitle {
+//   text-transform: uppercase;
+//   margin: 0px;
+//   margin-bottom: 50px;
+// }
+// .subTitle {
+//   color: $subTitle;
+// }
+
+// /* Media Query */
+// @media (max-width: 1380px) {
+//   .achievement-heading {
+//     font-size: 40px;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .achievement-heading {
+//     font-size: 30px;
+//     text-align: center;
+//   }
+//   .achievement-subtitle {
+//     font-size: 16px;
+//     line-height: normal;
+//     text-align: center;
+//   }
+// }
+
+// .achievement-carousel-div {
+//   padding: 0 10px;
+// }
+
+// .slick-slide {
+//   padding: 10px;
+// }
+
+// .slick-dots li button:before {
+//   color: #6c63ff; // or use $buttonColor or any variable
+//   font-size: 12px;
+// }
+
+// .slick-prev:before,
+// .slick-next:before {
+//   color: #6c63ff;
+//   font-size: 22px;
+// }
+
+// .custom-arrow {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 10;
+//   background-color: #6c63ff;
+//   color: white;
+//   width: 42px;
+//   height: 42px;
+//   font-size: 20px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+//   transition: all 0.3s ease;
+// }
+
+// .custom-arrow:hover {
+//   background-color: #5848c2;
+//   transform: translateY(-50%) scale(1.1);
+// }
+
+// .custom-prev {
+//   left: -30px;
+// }
+
+// .custom-next {
+//   right: -30px;
+// }
+
+// .achievement-carousel-div {
+//   position: relative;
+//   margin-top: 10px;
+//   margin-bottom: 10px; 
+// }
+
+// .achievement-carousel-div .slick-slide > div {
+//   margin-bottom: 0 !important;
+// }
+
+// .slick-slider {
+//     position: relative; 
+// }
+
+// .slick-slide {
+//   padding: 5px; // 👈 Reduce from 10px to 5px (if more compaction needed)
+// }
+
+
+// .slick-dots {
+//   position: relative;
+//   bottom: 0;
+//   margin-top: 20px;
+// }
+
+// @media (max-width: 768px) {
+//   .custom-arrow {
+//     width: 32px;
+//     height: 32px;
+//     font-size: 18px;
+//   }
+
+//   .custom-prev {
+//     left: -15px;
+//   }
+
+//   .custom-next {
+//     right: -15px;
+//   }
+// }
+
+@import "../../_globalColor";
+
+.achievement-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0;
+}
+.achievement-subtitle {
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 1380px) {
+  .achievement-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .achievement-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* FINAL SPACE FIXING PART */
+.achievement-carousel-div {
+  margin: 0 auto;
+  padding-bottom: 0px !important; // prevent bottom padding
+}
+
+.slick-slider {
+  margin-bottom: 0px !important; // eliminate bottom space
+}
+
+.slick-slide > div {
+  margin-bottom: 0 !important; // important to override default space
+  display: flex;
+  justify-content: center;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.slick-dots {
+  margin-top: 10px;
+  bottom: 0 !important;
+}
+
+.slick-dots li button:before {
+  color: #6c63ff;
+  font-size: 12px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #6c63ff;
+  font-size: 22px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #6c63ff;
+  color: white;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: #5848c2;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.custom-prev {
+  left: -30px;
+}
+.custom-next {
+  right: -30px;
+}
+
+@media (max-width: 768px) {
+  .custom-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  .custom-prev {
+    left: -15px;
+  }
+  .custom-next {
+    right: -15px;
+  }
+}
+
+/* Make slick dots (pagination) bigger and move down */
+.slick-dots {
+  bottom: -30px !important; // move down
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important; // increase dot size
+  color: #6c63ff !important;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5848c2 !important; // active dot color
+}
