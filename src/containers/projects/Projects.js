@@ -39,8 +39,7 @@ export default function Projects() {
   function setrepoFunction(array) {
     setrepo(array);
   }
-  if (
-    !(typeof repo === "string" || repo instanceof String)) {
+  if (!(typeof repo === "string" || repo instanceof String)) {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">

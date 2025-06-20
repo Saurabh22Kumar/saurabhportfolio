@@ -51,8 +51,7 @@
 //   }
 // }
 
-
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, {useState, useEffect, lazy, Suspense} from "react";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
 
@@ -67,12 +66,10 @@ export default function Profile() {
   useEffect(() => {
     const getProfileData = () => {
       fetch("/profile.json")
-        .then((res) => (res.ok ? res.json() : Promise.reject(res)))
-        .then((data) => setProf(data.data.user))
-        .catch((error) => {
-          console.error(
-            `${error} (GitHub contact section fallback triggered)`
-          );
+        .then(res => (res.ok ? res.json() : Promise.reject(res)))
+        .then(data => setProf(data.data.user))
+        .catch(error => {
+          console.error(`${error} (GitHub contact section fallback triggered)`);
           setProf("Error");
           setShowProfile(false);
         });

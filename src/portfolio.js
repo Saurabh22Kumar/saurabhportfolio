@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "I’m a passionate and detail-oriented Full Stack Software Developer 🚀, driven by curiosity and a constant desire to build clean, efficient, and scalable tech solutions. With a strong command over both frontend and backend development, I love crafting digital experiences that are fast, responsive, and user-focused.\n I specialize in JavaScript 📜, React.js ⚛️, Node.js 🟢, and MongoDB 🍃, and I’m also well-versed in Java ☕ and Python 🐍 for versatile problem-solving. I enjoy building modern web apps with Next.js and React, as well as exploring the power of API development, database design, and real-time features.\n My solid foundation in Data Structures & Algorithms ⚙️, Operating Systems 💻, DBMS 🗄️, and Software Engineering Principles helps me write optimized and maintainable code. I work comfortably with both SQL/MySQL 🧮 and NoSQL databases.\n From using Git/GitHub 🐙, VS Code 🧩, and Postman 📫, to deploying apps via Docker 🐳 and Vercel/Netlify ☁️, I confidently handle all phases of the development lifecycle. Whether it’s building dynamic UIs, integrating secure APIs, or implementing end-to-end solutions, I’m always eager to take on challenges and grow through them.\n Let’s create products that solve real problems and scale beautifully 🌍✨!"
   ),
-  resumeLink:
-    " my resume link ", // Set to empty to hide the button
+  resumeLink: " my resume link ", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -54,7 +53,7 @@ const skillsSection = {
       skillName: "TypeScript",
       fontAwesomeClassname: "devicon-typescript-plain"
     },
-    { 
+    {
       skillName: "Next.js",
       fontAwesomeClassname: "devicon-nextjs-original-wordmark"
     },
@@ -170,7 +169,7 @@ const workExperiences = {
       company: "Digital Bhem",
       companylogo: require("./assets/images/digitalbhemLogo.png"),
       date: "June 01,2024 – July 15,2024",
-      desc: "I completed a Web Development Internship at Digital Bheem from 1st June 2024 to 15th July 2024, where I developed responsive web pages, optimized user interfaces using HTML, CSS, and JavaScript, and collaborated on improving website performance and design.",
+      desc: "I completed a Web Development Internship at Digital Bheem from 1st June 2024 to 15th July 2024, where I developed responsive web pages, optimized user interfaces using HTML, CSS, and JavaScript, and collaborated on improving website performance and design."
     }
   ]
 };
@@ -234,8 +233,7 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications that I have done !",
+  subtitle: "Achievements, Certifications that I have done !",
   achievementsCards: [
     {
       title: "Cyber Security and Applied Ethical Hacking",

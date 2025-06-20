@@ -33,7 +33,7 @@ export default function Greeting() {
                     ? "dark-mode greeting-text-p"
                     : "greeting-text-p subTitle"
                 }
-                style={{ whiteSpace: 'pre-line' }}
+                style={{whiteSpace: "pre-line"}}
               >
                 {greeting.subTitle}
               </p>

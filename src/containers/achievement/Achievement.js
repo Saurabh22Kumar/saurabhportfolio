@@ -56,29 +56,28 @@
 //   );
 // }
 
-
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import { achievementSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {achievementSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import Slider from "react-slick";
 
 export default function Achievement() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   if (!achievementSection.display) {
     return null;
   }
 
-  const CustomPrevArrow = ({ onClick }) => (
+  const CustomPrevArrow = ({onClick}) => (
     <div className="custom-arrow custom-prev" onClick={onClick}>
       &#10094;
     </div>
   );
 
-  const CustomNextArrow = ({ onClick }) => (
+  const CustomNextArrow = ({onClick}) => (
     <div className="custom-arrow custom-next" onClick={onClick}>
       &#10095;
     </div>
@@ -99,16 +98,16 @@ export default function Achievement() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-        },
+          slidesToShow: 2
+        }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -147,7 +146,7 @@ export default function Achievement() {
                       description: card.subtitle,
                       image: card.image,
                       imageAlt: card.imageAlt,
-                      footer: card.footerLink,
+                      footer: card.footerLink
                     }}
                   />
                 </div>
