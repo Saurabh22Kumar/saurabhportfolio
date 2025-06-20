@@ -23,7 +23,7 @@ const greeting = {
   username: "Saurabh Kumar",
   title: "Hi all, I'm Saurabh",
   subTitle: emoji(
-    "I’m a passionate and performance-driven Full Stack Software Developer 🚀 with a strong foundation in building scalable, responsive, and user-focused Web and Mobile applications.\nI specialize in technologies like JavaScript 📜, React.js ⚛️, Node.js 🟢, and React Native 📱, and have solid experience with Java ☕ and Python 🐍.\nMy core technical strengths include Data Structures & Algorithms ⚙️, Operating Systems 💻, DBMS 🗄️, and Software Engineering Principles.\nI’m proficient in working with both SQL and MySQL 🧮 for managing structured data, and use MongoDB 🍃 for NoSQL solutions.\nI confidently use tools like Git/GitHub 🐙, VS Code 🧩, and Postman 📫 throughout the development lifecycle.\nWhether it’s designing intuitive frontends, developing robust backends, or optimizing database queries, I strive to deliver clean, efficient, and impactful solutions.\nLet’s build innovative tech that performs beautifully and scales effortlessly!"
+    "I’m a passionate and detail-oriented Full Stack Software Developer 🚀, driven by curiosity and a constant desire to build clean, efficient, and scalable tech solutions. With a strong command over both frontend and backend development, I love crafting digital experiences that are fast, responsive, and user-focused.\n I specialize in JavaScript 📜, React.js ⚛️, Node.js 🟢, and MongoDB 🍃, and I’m also well-versed in Java ☕ and Python 🐍 for versatile problem-solving. I enjoy building modern web apps with Next.js and React, as well as exploring the power of API development, database design, and real-time features.\n My solid foundation in Data Structures & Algorithms ⚙️, Operating Systems 💻, DBMS 🗄️, and Software Engineering Principles helps me write optimized and maintainable code. I work comfortably with both SQL/MySQL 🧮 and NoSQL databases.\n From using Git/GitHub 🐙, VS Code 🧩, and Postman 📫, to deploying apps via Docker 🐳 and Vercel/Netlify ☁️, I confidently handle all phases of the development lifecycle. Whether it’s building dynamic UIs, integrating secure APIs, or implementing end-to-end solutions, I’m always eager to take on challenges and grow through them.\n Let’s create products that solve real problems and scale beautifully 🌍✨!"
   ),
   resumeLink:
     " my resume link ", // Set to empty to hide the button
@@ -36,11 +36,6 @@ const socialMediaLinks = {
   github: "https://github.com/Saurabh22Kumar/",
   linkedin: "https://www.linkedin.com/in/saurabh-kumar-04b313299",
   gmail: "myidis2203@gmail.com",
-  // gitlab: " future-git-lab-link  ",
-  // facebook: " future-facebook-lnk  ",
-  // stackoverflow: " future-stackoverflow-link   ",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
@@ -52,17 +47,33 @@ const skillsSection = {
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    // emoji("⚡ contents to add in future "),
-    // emoji(
-    //   "⚡ contents to add in future "
-    // )
+    )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "devicon-typescript-plain"
+    },
+    { 
+      skillName: "Next.js",
+      fontAwesomeClassname: "devicon-nextjs-original-wordmark"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf" // or use devicon-mongodb-plain if supported
+    },
+    {
+      skillName: "Express.js",
+      fontAwesomeClassname: "fas fa-server" // or devicon-express-original
+    },
+    {
+      skillName: "Tailwind CSS",
+      fontAwesomeClassname: "devicon-tailwindcss-plain"
+    },
+    {
+      skillName: "Supabase",
+      fontAwesomeClassname: "devicon-supabase-plain" // (use a custom icon if FontAwesome doesn't support it)
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -98,7 +109,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -121,9 +132,9 @@ const educationInfo = {
       duration: "July 2019 - June 2022"
     },
     {
-      schoolName: "Army Public School",
+      schoolName: "Army Public School, Danapur Cantt",
       logo: require("./assets/images/apsLogo.jpeg"),
-      subHeader: "June 2018",
+      subHeader: "2017 - 2018"
     }
   ]
 };
@@ -160,7 +171,7 @@ const workExperiences = {
       companylogo: require("./assets/images/digitalbhemLogo.png"),
       date: "June 01,2024 – July 15,2024",
       desc: "I completed a Web Development Internship at Digital Bheem from 1st June 2024 to 15th July 2024, where I developed responsive web pages, optimized user interfaces using HTML, CSS, and JavaScript, and collaborated on improving website performance and design.",
-    },
+    }
   ]
 };
 
@@ -168,33 +179,54 @@ const workExperiences = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some real-world platforms and applications I’ve built",
   projects: [
     {
-      image: require("./assets/images/digitalbhemLogo.png"),
-      projectName: "Lorem ipsum",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/portfolioLogo.png"), // Replace with actual image
+      projectName: "Portfolio Website",
+      projectDesc:
+        "A customizable and responsive personal portfolio template built with React.js, integrating GitHub to showcase live projects dynamically.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "projectLink"
+          name: "View Project",
+          url: "https://github.com/yourusername/developerfolio" // replace with your GitHub/Live URL
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/digitalbhemLogo.png"),
-      projectName: "Lorem ipsum",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/besideLogo.png"), // Replace with actual image
+      projectName: "Beside – Rental Platform",
+      projectDesc:
+        "A modern rental platform with role-based access, real-time booking, Supabase Auth, and Cloudinary integration. Built with Next.js + Supabase.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "projectlink"
+          name: "View Project",
+          url: "https://github.com/Saurabh22Kumar/beside-rental-platform" // replace with your GitHub/Live URL
+        },
+        {
+          name: "View Live",
+          url: "https://beside-rental-platform.vercel.app/" // replace with your GitHub/Live URL
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/chatflowLogo.png"), // Replace with actual image
+      projectName: "ChatFlow – Realtime Chat App",
+      projectDesc:
+        "A secure, full-stack MERN chat app with live messaging, emoji reactions, dark mode, message encryption, and self-destructing chats.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/Saurabh22Kumar/chatflow" // replace with your GitHub/Live URL
+        },
+        {
+          name: "View Live",
+          url: "https://chatflow-production-2fcc.up.railway.app/" // replace with your GitHub/Live URL
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -204,7 +236,6 @@ const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
     "Achievements, Certifications that I have done !",
-
   achievementsCards: [
     {
       title: "Cyber Security and Applied Ethical Hacking",
@@ -214,8 +245,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -227,8 +257,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -240,8 +269,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -253,8 +281,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -266,8 +293,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -279,8 +305,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -292,8 +317,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -305,8 +329,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -318,8 +341,7 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
     },
@@ -331,12 +353,10 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          //url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification"
         }
       ]
-    },
-    
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -345,8 +365,6 @@ const achievementSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
