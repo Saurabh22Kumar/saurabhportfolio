@@ -188,7 +188,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View Project",
-          url: "https://github.com/yourusername/developerfolio" // replace with your GitHub/Live URL
+          url: "https://github.com/Saurabh22Kumar/saurabhportfolio" // replace with your GitHub/Live URL
         }
       ]
     },
