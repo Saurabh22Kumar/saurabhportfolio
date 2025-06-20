@@ -1,5 +1,7 @@
 # DeveloperFolio
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-green?style=for-the-badge)](https://saurabhportfolio-five.vercel.app/)
+
 A modern, customizable personal portfolio website built with React.js. Showcase your skills, projects, achievements, and professional journey with a beautiful, responsive design.
 
 ## 🚀 Features
@@ -38,6 +40,7 @@ A modern, customizable personal portfolio website built with React.js. Showcase 
 
 ## 📦 Deployment
 - Deploy to Vercel, Netlify, or use the provided Dockerfile for containerized deployment.
+- **Live Demo:** [https://saurabhportfolio-five.vercel.app/](https://saurabhportfolio-five.vercel.app/)
 
 ## 🙏 Credits
 - Inspired by open-source developer portfolio templates.
