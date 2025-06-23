@@ -223,6 +223,22 @@ const bigProjects = {
           url: "https://chatflow-production-2fcc.up.railway.app/" // replace with your GitHub/Live URL
         }
       ]
+    },
+    {
+      image: require("./assets/images/artistrlyLogo.png"), // Replace with actual image
+      projectName: "Artistrly.com – Art Marketplace",
+      projectDesc:
+        "Artistly.com is a modern, mobile-friendly demo platform for discovering and booking performing artists. Built with Next.js 13+, TypeScript, Tailwind CSS, and ShadCN UI. Features authentication, robust forms, filters, and responsive UI. For demo use only." ,   
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/Saurabh22Kumar/artistly" // replace with your GitHub/Live URL
+        },
+        {
+          name: "View Live",
+          url: "https://artistly-olive.vercel.app/" // replace with your GitHub/Live URL
+        }
+      ]
     }
   ],
   display: true
